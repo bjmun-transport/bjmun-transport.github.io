@@ -51,6 +51,9 @@ img.wide {
 table {
 	border="1";
 }
+a.toggleexpand {
+	font-size: 20px;
+}
 </style>
 </head>
 <body>
@@ -343,7 +346,7 @@ table {
 <p>由蓝色线经过的车站出发时请以 <strong class="m10">10 号线亮马桥站</strong>为下车站。由粉色线经过的车站出发时请以 <strong class="m14">14 号线枣营站</strong>为下车站。<ins>粉色</ins>表示新修订的内容，<ins style="color:#ff0000">红色</ins>表示暂不可用的内容。</p>
 <p>标有箭头的换乘站表示您需要在此站换乘至箭头方向的线路。不要在标有黑色×符号的换乘站换乘。</p>
 <p>关于换乘的详细信息请参考前述“参考乘车方案”一节相关记载。关于自下车站至二十一世纪饭店的步行路线请参见后述“亮马桥站步行方案”和“枣营站步行方案”两节相关记载。</p>
-<a data-toggle="collapse" data-target="#subway-map">展开 · 收起线路图</a>
+<a class="toggleexpand" data-toggle="collapse" data-target="#subway-map">展开 · 收起线路图</a>
 
 <div id="subway-map" class="collapse">
 <img class="wide" src="img/subway-map.svg"></img>
@@ -364,12 +367,14 @@ table {
 14 号线陶然桥站、高家园站暂缓开通<br>
 11 号线模式口站暂缓开通<br>
 16 号线苏州街站、二里沟站暂缓开通，<ins>木樨地站换乘 1 号线需二次入闸</ins><br>
+<ins style="color: #ff0000">1 号线、16 号线木樨地站站内换乘尚未开通，16 号线换乘 1 号线须从 F 口出站，步行越过永定河引水渠桥和三里河路，从 A1 口重新进站，1 号线换乘 16 号线沿相反路线进行站外换乘，持IC卡和各类乘车码可连续计费</ins><br>
 <del>19 号线北太平庄站、平安里站、太平桥站、景风门站暂缓开通</del><br>
 <ins>1 号线苹果园站已于 2020 年 4 月 28 日关闭改造，预计 2023 年度末同福寿岭站一并开通</ins>
 </p>
+
 <p class="alert" style="font-size: 40px">10 号线三元桥站于 2022 年 12 月 24 日（六）至 2023 年 3 月 18 日（六）关闭，全列车通过、站内换乘中止<br>
 由首都机场出发的代表请乘坐首都机场线至东直门站，进入东直门枢纽乘 418 至安家楼站到达二十一世纪饭店会场；或选择乘坐机场巴士</p>
-<p class="alert" style="font-size: 40px">1 号线、16 号线木樨地站站内换乘尚未开通，16 号线换乘 1 号线须从 F 口出站，步行越过永定河引水渠桥和三里河路，从 A1 口重新进站，1 号线换乘 16 号线沿相反路线进行站外换乘，持IC卡和各类乘车码可连续计费</p>
+
 <p class="alert" style="font-size: 40px">昌平线南延段（清河站—蓟门桥区间）未能如期开通，自昌平线各站始发的代表仍需使用原来的乘车路线</p>
 </div>
 
@@ -382,7 +387,7 @@ table {
 
 <h3>亮马桥站步行方案</h3>
 <p>请从 C 口出站，掉头，至大马路右转，绕过燕莎中心后沿亮马桥路步行约 900 m，直行通过 3 个红绿灯路口，进入中日青年交流中心院内靠左通行，穿过停车场即到。</p>
-<a data-toggle="collapse" data-target="#liangmaqiao-map">展开 · 收起地图</a>
+<a class="toggleexpand" data-toggle="collapse" data-target="#liangmaqiao-map">展开 · 收起地图</a>
 
 <div id="liangmaqiao-map" class="collapse">
 <img src="img/liangmaqiao-map.png"></img>
@@ -390,7 +395,7 @@ table {
 
 <h3>枣营站步行方案</h3>
 <p>请从 A 口出站，沿朝阳公园路向北步行约 600 m，跨过亮马河后右转，沿亮马河左堤道路步行约 160 m，左转进入院内，经过二十一世纪大厦后下穿连廊即到。</p>
-<a data-toggle="collapse" data-target="#zaoying-map">展开 · 收起地图</a>
+<a class="toggleexpand" data-toggle="collapse" data-target="#zaoying-map">展开 · 收起地图</a>
 
 <div id="zaoying-map" class="collapse">
 <img class="narrow" src="img/zaoying-map.png"></img>
@@ -398,7 +403,7 @@ table {
 
 <h2>3&emsp;乘坐机场巴士</h2>
 <p>如需乘坐机场巴士，请乘坐<strong>机场巴士 1 线</strong>至<strong>亮马桥</strong>站。票价 18 元。之后请通过天桥至马路对侧辅路的燕莎桥南公交车站，乘坐 <strong><ins>402 路</ins></strong>、<strong><ins>4 路</ins></strong>、<strong><ins>687 路</ins></strong>至安家楼站下车。</p>
-<a data-toggle="collapse" data-target="#airport-bus">展开 · 收起地图</a>
+<a class="toggleexpand" data-toggle="collapse" data-target="#airport-bus">展开 · 收起地图</a>
 
 <div id="airport-bus" class="collapse">
 <img src="img/airport-bus.png"></img>
@@ -408,6 +413,12 @@ table {
 <p>目前，北京市利用市内铁路资源开通了数条市郊铁路线路。另外，有一部分高速铁路在北京市内也具备快速进入城区的功能。这些列车适合来自远郊区县的代表使用，不过因为车次稀缺，市郊铁路和高速列车对代表报到的帮助有限。</p>
 <h3>乘坐市郊铁路</h3>
 <p>北京市郊铁路网络目前有城市副中心线、怀柔-密云线、通密线、S2 线。全列车均按照北京地铁票制计费。</p>
+
+<a class="toggleexpand" data-toggle="collapse" data-target="#urbanrail-map">展开 · 收起线路图</a>
+
+<div id="urbanrail-map" class="collapse">
+<img class="wide" src="img/urbanrail-map.svg"></img>
+</div>
 <h4>城市副中心线</h4>
 <p>城市副中心线由良乡方向有 2 列车可以利用。请在北京西站下车，并在站内换乘地铁，按上节地铁乘车方案乘坐 7 号线—10 号线到达二十一世纪饭店会场。</p>
 <table border="1">
@@ -430,7 +441,7 @@ table {
 <td>S110</td><td>6:00</td><td>6:10</td><td>通过</td><td>7:33</td>
 </tr>
 <tr>
-<td>S105</td><td>7:07</td><td>7:18</td><td>7:32</td><td>7:43</td>
+<td>S102</td><td>7:07</td><td>7:18</td><td>7:32</td><td>7:43</td>
 </tr>
 </table>
 <h4>怀柔-密云线</h4>
@@ -466,20 +477,22 @@ table {
 <th>列车</th><th>延庆发</th><th>南口发</th><th>黄土店到</th>
 </tr>
 <tr>
-<td>S602</td><td>6:44</td><td>7:43</td><td>8:10</td>
+<td>S202</td><td>6:44</td><td>7:43</td><td>8:10</td>
 </tr>
 </table>
 <h4>乘坐市郊铁路的注意事项</h4>
 <div style="font-size: 28px">
-<p class="alert">除 S2 线外的市郊铁路线路均实施实名制策略，普通 IC 公交卡无效，使用电子乘车码需通过人码合一验证，否则须购买车票。购买车票需要提供有效身份证件。<br>
-北京市郊铁路各线路采用铁路客运管理模式，列车发车前 5 分钟停止检票，请务必在停检前至少 10 分钟到达车站。</p>
+<p class="alert">除 S2 线外的市郊铁路线路均实施实名制策略，需要办理实名制专用 IC 公交卡，普通 IC 公交卡无效，使用电子乘车码需通过人码合一验证，以上条件均不满足时须购买车票。<br>
+单程车票可以在不晚于列车发车前 30 分钟通过 12306 网站或 APP 预购。购买车票和凭车票乘车需要提供有效身份证件。<br>
+北京市郊铁路各线路采用铁路客运管理模式，列车发车前 5 分钟停止检票，进站前需要进行实名制检查和更严格的安检，因此请务必在停检前至少 5 分钟（现场购买车票则需在停检前至少 10 分钟）到达车站。</p>
 </div>
 
 <h2>修订记录</h2>
 <p><ins>所有修订均以粉色字体显示。</ins></p>
-<p><a data-toggle="collapse" data-target="#edit">展开 · 收起修订记录</a></p>
+<p><a class="toggleexpand" data-toggle="collapse" data-target="#edit">展开 · 收起修订记录</a></p>
 
 <div id="edit" class="collapse">
+<h4>文本修订记录</h4>
 <table border="1">
 <tr>
 <th>日期</th><th>版本</th><th>修订内容</th><th>批准人</th>
@@ -584,7 +597,7 @@ table {
 添加昌平线南延段未能如期开通信息；<br>
 添加 10 号线三元桥站临时关闭信息；<br>
 添加房山线 · 9号线直通运输对应乘车信息；<br>
-添加乘坐机场巴士前往参会的章节。
+添加乘坐市郊铁路前往参会的章节。
 </td><td>RiceShower</td>
 </tr>
 </table>
@@ -598,7 +611,7 @@ table {
 </tr>
 </table-->
 
-<h4>线路图修订记录</h4>
+<h4>地铁线路图修订记录</h4>
 <table border="1">
 <tr>
 <th>日期</th><th>版本</th><th>修订内容</th><th>批准人</th>
@@ -614,6 +627,17 @@ table {
 根据线路更新迭代路网换乘方案；<br>
 添加三元桥站暂停使用与换乘信息；<br>
 添加 402 线 51 号站和 52 号站预计开通时期。</td><td>RiceShower</td>
+</tr>
+</table>
+
+<h4>市郊铁路图修订记录</h4>
+<table border="1">
+<tr>
+<th>日期</th><th>版本</th><th>修订内容</th><th>批准人</th>
+</tr>
+
+<tr>
+<td>2023 年 1 月 17 日</td><td>1.0</td><td>第一次发布</td><td>RiceShower</td>
 </tr>
 </table>
 </div>
